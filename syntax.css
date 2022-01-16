@@ -1,0 +1,744 @@
+#big{
+    height: 700px;
+    text-align: center;
+    background-color:rgba(200, 100, 187, 0.2);
+    position: relative;
+    bottom:340px;
+    z-index: 1;
+
+}
+
+#main-navigation ul{
+    text-align: right;
+    list-style-type: none;
+    margin-right: 50px;
+    position: absolute;
+    top: -17px;
+    right: -50px;
+    background-color: white;
+    height: 100px;
+    width: 1500px;
+    padding-top: 10px;
+}
+body{
+    height: 1300px;
+}
+a{
+    position: absolute;
+    top: -5px;
+}
+#main-navigation li{
+    display: inline-block;
+}
+#img1{
+    position: absolute;
+    right: 1250px;
+    top: 10px;
+}
+#about{
+    position: relative;
+    z-index: 1;
+    bottom: 343px;
+    padding-top: 20px;
+    background-color: white
+}
+
+#main-navigation a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+    position: relative;
+    bottom: 40px;
+    right: 400px;
+    color: palevioletred;
+}
+#main-navigation a:hover{
+    color: black;
+}
+#img2{
+    position: relative;
+    bottom: -5px;
+    right: 10px;
+}
+.dac{
+    position: relative;
+    bottom: 5px;
+    right: 250px;
+    font-size: 20px;
+}
+#img3{
+    position: relative;
+    bottom: -5px;
+    right: 5px;
+}
+.rac{
+    position: relative;
+    bottom: 5px;
+    right: 80px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.rac:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+button{
+    color: black;
+    font-size: 20px;
+    background-color: rgba(226, 98, 141, 0.1);
+    padding:15px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.btn{
+    position: absolute;
+    bottom: 300px;
+    left: 550px;
+}
+
+.dip{
+    position: absolute;
+    bottom: 350px;
+    right: 750px;
+    font-size: 40px;
+}
+
+.gip{
+    position: absolute;
+    bottom: 347px;
+    right: 500px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: palevioletred;
+}
+
+#sticky{
+    position: sticky;
+    top: 200px;
+}
+
+
+.bth{
+    position: absolute;
+    top: 410px;
+    background-color: white;
+    padding: 10px;
+    left: 65px;
+}
+
+#bth:hover{
+background-color: black;
+color: palevioletred;
+}
+
+#img4{
+    position: absolute;
+    right: 90px;
+    top: 67px;
+}
+
+#img5{
+  position: relative;
+  left: 755px;
+  bottom: 330px; 
+
+}
+#image-container::before{
+    content: "";
+    position: absolute;
+    top: 73px;
+    left: 730px;
+    width: 390px;
+    height: 310px;
+    outline: 0.5rem solid yellow;
+    z-index: -1;
+    transition: all 1s ease-out;
+}
+#image-container:hover:before{
+    transform:scale(1.1) ;
+    left: 773px;
+    top: 99px;
+}
+
+#about{
+    height: 600px;
+}
+
+#main-sub{
+    background-color: thistle;
+    height: 300px;
+    position: relative;
+    bottom: 390px;
+    z-index: 1;
+}
+#main-sb{
+  position: relative;  
+  z-index: 1;
+  bottom: 400px;
+  height: 1500px;
+  background-color: thistle;
+}
+#set{
+    position: relative;
+    top: 16px;
+}
+
+#form{
+    width: 500px;
+    height: 35px;
+}
+
+#swt{
+position: relative;
+left: 330px;
+top: -58px;
+font-size: 20px;
+}
+
+#sweet1{
+    position: relative;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: white;
+    width: 370px;
+    right: -30px;
+    font-size: 20px;
+}
+
+
+#img6{
+    position: relative;
+    top:30px;
+    flex-direction: column;
+    padding-left: 30px;
+    transition:all 2s ease-in-out;
+}
+#img6:hover{
+    transform: scale(1.1);
+    width: 400px;
+}
+
+#img7{
+position: relative;
+flex-direction: column;
+left: 430px;
+bottom: 375px;
+padding-left: 30px;
+transition:all 2s ease-in-out;
+}
+#img7:hover{
+    transform: scale(1.1);
+}
+
+#img8{
+    position: relative;
+    flex-direction: column;
+    left: 875px;
+    bottom: 780px;
+    padding-left: 20px;
+    transition:all 2s ease-in-out ;
+}
+#img8:hover{
+    transform: scale(1.1);
+}
+#imt1:hover{
+    color: white;
+}
+
+#yet{
+    position: absolute;
+    left: 540px;
+    font-size: 30px;
+    top: 29px;
+}
+
+.were{
+    position: relative;
+    right: -600px;
+    font-size: 70px;
+    bottom: -26px;
+    color: palevioletred;
+}
+
+button{
+position: relative;
+left:250px;
+margin-left: 40px;
+}
+
+button:hover{
+    background-color: black;
+    color: palevioletred;
+}
+
+#set{
+    position: relative;
+    left: 370px;
+}
+
+#form{
+    position: relative;
+    left: 370px;
+}
+
+.jan{
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+}
+
+.hit{
+    position: relative;
+    left: 100px;
+    top: 160px;
+    font-size: 40px;
+}
+
+.red{
+    position: relative;
+    left: 215px;
+    top: 29px;
+    font-size: 70px;
+    color: palevioletred;
+}
+#sweet2{
+    position: relative;
+    top: -410px;
+    left: 460px;
+    border: 1px solid white;
+    width: 374px;
+    padding: 15px;
+    background-color: white;
+}
+#amt{
+    position: relative;
+    top: -465px;
+    left: 780px;
+}
+#sweet3{
+    position: relative;
+    top: -815px;
+    left: 895px;
+    border: 1px solid white;
+    width: 368px;
+    padding-left: 15px;
+    padding: 15px;
+    background-color: white;
+}
+#amt1{
+    position: relative;
+    top: -870px;
+    left: 1200px;
+}
+#img9{
+    position: relative;
+    top: -840px;
+    flex-direction: column;
+    left: 30px;
+    transition: all 1s ease-in-out;
+}
+#img9:hover{
+    transform: scale(1.1);
+}
+#doug1{
+    position: relative;
+    top: -875px;
+    left: 30px;
+    border: 1px solid white;
+    width: 370px;
+    padding: 15px;
+    background-color: white;
+}
+#amt2{
+    position: relative;
+    top: -930px;
+    left: 340px;
+}
+#img10{
+    position: relative;
+    top: -1245px;
+    flex-direction: column;
+    left: 462px;
+    transition: all 1s ease-in-out;
+}
+#img10:hover{
+    transform: scale(1.1);
+}
+#sweet4{
+    position: relative;
+    top: -1275px;
+    left: 463px;
+    border: 1px solid white;
+    width: 365px;
+    background-color: white;
+    padding: 15px;
+}
+#amt3{
+    position: relative;
+    top: -1330px;
+    left: 770px;
+}
+#img11{
+    position: relative;
+    top: -1647px;
+    flex-direction: column;
+    left: 893px;
+    width: 400px;
+    transition: all 1s ease-in-out;
+}
+#img11:hover{
+    transform: scale(1.1);
+}
+#ccake1{
+    position: relative;
+    top: -1675px;
+    left: 893px;
+    border: 1px solid white;
+    width: 368px;
+    padding: 15px;
+    background-color: white;
+}
+#amt4{
+    position: relative;
+    top: -1730px;
+    left: 1200px;
+}
+#img12{
+    position: relative;
+    flex-direction: column;
+    top:-1705px;
+    left: 30px;
+    transition: all 1s ease-in-out;
+}
+#img12:hover{
+    transform: scale(1.1);
+}
+#img13{
+    position: relative;
+    flex-direction: column;
+    top: -2108px;
+    left: 460px;
+    transition: all 1s ease-in-out;
+}
+#img13:hover{
+    transform: scale(1.1);
+}
+#doug2{
+    position: relative;
+    top: -2150px;
+    left: 460px;
+    border: 1px solid white;
+    width: 370px;
+    background-color: white;
+    padding: 15px;
+}
+#amt6{
+    position: relative;
+    top: -2205px;
+    left: 770px;
+}
+
+#img14{
+    position: relative;
+    flex-direction: column;
+    top:-2000px;
+    left: 800px;
+}
+#cake2{
+    position: relative;
+    top: -1750px;
+    left: 30px;
+    border: 1px solid white;
+    width: 370px;
+    padding: 15px;
+    background-color: white;
+}
+#amt5{
+    position: relative;
+    top: -1805px;
+    left: 350px;
+}
+#img14{
+    position: relative;
+    flex-direction: column;
+    top: -2510px;
+    left: 890px;
+    transition: all 1s ease-in-out;
+}
+#img14:hover{
+    transform: scale(1.1);
+}
+#sweet5{
+    position: relative;
+    top: -2555px;
+    left: 890px;
+    border: 1px solid white;
+    width: 370px;
+    padding: 15px;
+    background-color: white;
+}
+#amt7{
+    position: relative;
+    top:-2608px;
+    left: 1200px;
+}
+#img15{
+    position: relative;
+    flex-direction: column;
+    top: -2580px;
+    left: 30px;
+    transition: all 1s ease-in-out;
+}
+#img15:hover{
+    transform: scale(1.1);
+}
+#img16{
+    position: relative;
+    top:-2980px;
+    flex-direction: column;
+    left:460px;
+    transition: all 1s ease-in-out;
+}
+#img16:hover{
+    transform: scale(1.1);
+}
+#ccake2{
+    position: relative;
+    top: -2605px;
+    left: 30px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid white;
+    width: 370px;
+}
+#amt8{
+    position: relative;
+    top: -2660px;
+    left: 350px;
+}
+#cake3{
+    position: relative;
+    top :-3009px;
+    left: 460px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: white;
+    width: 370px;
+}
+#amt9{
+    position: relative;
+    top: -3065px;
+    left: 780px;
+}
+#img17{
+    position: relative;
+    flex-direction: column;
+    top: -3385px;
+    left: 890px;
+    transition: all 1s ease-in-out;
+}
+#img17:hover{
+    transform: scale(1.1);
+}
+#doug3{
+    position: relative;
+    top: -3412px;
+    left: 890px;
+    border: 1px solid white;
+    width: 370px;
+    padding: 15px;
+    background-color: white;
+}
+#amt10{
+    position: relative;
+    top: -3470px;
+    left: 1210px;
+}
+#imt1{
+    position: relative;
+    left: 40px;
+    bottom: 1210px;
+    background-color: burlywood;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 0px;
+    transition:all 1s ease-in;
+    padding: 5px;
+    visibility: ;
+} 
+ #store-item:hover #imt1{
+    visibility: visible;
+    transform: scale(1.1);
+} 
+#imt1:hover{
+       background-color:  #fff;
+}
+
+#img4{
+    transition: all 2s ease-in-out;
+}
+ #img4:hover {
+    transform: scale(1.1);
+    
+}
+#imt2{
+    position: absolute;
+    left: 835px;
+    padding: 5px;
+    top: 263px;
+    background-color: burlywood;
+    transition: all 1s ease-in-out;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 0px;
+    visibility: hidden;
+}
+#store-item:hover #imt2{
+    visibility: visible;
+}
+#imt3{
+    position: absolute;
+    left: 1265px;
+    bottom: 1210px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    transition: all 1s ease-in-out;
+    padding: 5px;
+    visibility: hidden;
+}
+#store-item:hover #imt3{
+    visibility: visible;
+    
+}
+#imt4{
+    position: absolute;
+    left: 400px;
+    bottom: 868px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt4{
+    visibility: visible;
+}
+#imt5{
+    position: absolute;
+    left: 830px;
+    bottom: 868px;
+    border: 0px solid black;
+    background-color: burlywood;
+    transition: all 1s ease-in-out;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    visibility:hidden; 
+}
+#store-item:hover #imt5{
+    visibility: visible;
+}
+#imt6{
+    position: absolute;
+    left: 1263px;
+    bottom: 863px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    transition: all 1s ease-in-out;
+    padding: 5px;
+    visibility: hidden;
+}
+#store-item:hover #imt6{
+visibility: visible;
+}
+#imt7{
+    position: absolute;
+    left: 400px;
+    bottom: 538px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt7{
+    visibility: visible;
+}
+#imt8{
+    position: absolute;
+    left: 830px;
+    bottom: 536px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt8{
+    visibility: visible;
+}    
+#imt9{
+    position: absolute;
+    left: 1260px;
+    bottom: 540px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt9{
+    visibility: visible;
+}
+#imt-10{
+    position: absolute;
+    left:400px;
+    bottom: 187px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt-10{
+    visibility: visible;
+}
+#imt-11{
+    position: absolute;
+    left: 830px;
+    bottom: 185px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt-11{
+    visibility: visible;
+}
+#imt-12{
+    position: absolute;
+    left:1260px;
+    bottom: 185px;
+    border: 0px solid black;
+    background-color: burlywood;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+    visibility: hidden;
+}
+#store-item:hover #imt-12{
+    visibility: visible;
+}
+
+
