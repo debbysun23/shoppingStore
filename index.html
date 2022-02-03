@@ -24,7 +24,7 @@
         <div id="big">
             <p class="dip"> welcome to</p>
             <h2 class="gip">Grandma's</h2>
-            <button class="main btn">EXPLORE</button>
+            <button class="main btn" data-filter="explore">EXPLORE</button>
 
         </div>
 
@@ -34,7 +34,7 @@
             <p class="jan">Lorem dolor sit amet consectetur adipisicing elit. Velit,<br> aliquam voluptas beatae vitae
                 expedita consectetur neciant quia<br> deserunt asperiores facere fuga dicta fugiat corrupti et omnis<br>
                 porro at dolorum! Ad!</p>
-            <button class=" main bth">EXPLORE</button>
+            <button class=" main bth" data-filter="explore">EXPLORE</button>
             <div id="image-container">
                 <img id="img5" src="sweet 1.jfif" width="430px" height="337px">
             </div>
@@ -42,130 +42,205 @@
 
     </div>
 
-    <div id="main-sub">
-        <h3 id="yet">Our</h3>
-        <h1 class="were">Store</h1>
-        <button class="main rty">ALL</button>
-        <button class="main bty">CAKES</button>
-        <button class="main hty">CUPCAKES</button>
-        <button class="main bk">SWEETS</button>
-        <button class="main hoy">DOUGHNUTS</button><br>
-        <form id="fb">
+    <div class="row">
+     <div  id="main-sub" class="row">
+         <h3 id="yet">Our</h3>
+            <h1 class="were">Store</h1>
+            <button class="main rty big" data-filter="all">ALL</button>
+         <button class="main bty" data-filter="cakes">CAKES</button>
+         <button class="main hty" data-filter="cupcakes">CUPCAKES</button>
+         <button class="main bk" data-filter="sweets">SWEETS</button>
+         <button class="main hoy" data-filter="doughnuts">DOUGHNUTS</button><br>
+         <form id="fb">
             <img id="set" src="search icon2.png" width="40px"><input type="text" id="form" placeholder="item...."><br>
-        </form>
-    </div>
-    <div id="main-sb">
-        <div class="col-md-3">
-            <div id="store-item" style="display: table-row;" class="sweet">
-                <div id="img-container">
-                    <img id="img6" class="sweet" onmouseover="increase()" onmouseout="decrease()" src="sweet 1.jfif"
-                        width="400px">
-                    <img id="imt1" src="shopping-cart (1).png" width="20px">
+         </form>
+     </div>
+     <div class="row" id="store-items">
+         <div class="store-item sweet column" data-item="sweet">
+             <div  class="card">
+                 <div class="img-container">
+                     <img id="img6" class="sweet card-img-top store-img" src="sweet 1.jfif"
+                         width="400px">
+                     <img id="imt1" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                 </div>
+                 <div class="card-body">
+                     <div class="card-text d-flex justify-content-between">
+                            <h3 id="sweet1" class="sweet item">sweet item</h3>
+                            <h3 id="swt" class="sweet value">$ 5</h3>
+                     </div>
+                    </div>
+             </div>
+         </div>
+     
+         <div class="store-item cupcake column" data-item="cupcake">
+             <div class="card">
+                    <div class="img-container">
+                        <img id="img7" class="cupcake card-img-top store-img"  src="cupcake1.jpg" width="405px">
+                        <img id="imt2" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                    </div>
+             </div> 
+                <div class="card-body"> 
+                    <div class="card-text d-flex justify-content-between">
+                        <h3 id="sweet2" class="cupcake item">cupcake item</h3>
+                     <h3 id="amt" class="cupcake value">$ 5</h3>
+                    </div>
                 </div>
-                <h3 id="sweet1" class="sweet">sweet item</h3>
-                <h3 id="swt" class="sweet">$ 5</h3>
+         </div>
+         <div class="store-item cake column" data-item="cake">
+                <div  class="card">
+                 <div class="img-container">
+                        <img id="img8" class="card-img-top cake store-img"  src="cake2.jpg"
+                            width="400px">
+                        <img id="imt3" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                 </div>
+                </div> 
+                <div class="card-body"> 
+                    <div class="card-text d-flex justify-content-between">
+                        <h3 id="sweet3" class="cake item">cake item</h3>
+                        <h3 id="amt1" class="cake value">$ 5</h3>
+                    </div>
+                </div>
+         </div>  
+        
+         <div class="store-item dougnut column" data-item="dougnut">
+             <div class="card">
+                    <div class="img-container">   
+                    <img id="img9" class="dougnut store-img"  src="dougnut1.jpg"
+                     width="400px">
+                    <img id="imt4" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                    </div>
+                </div> 
+             <div class="card-body"> 
+                 <div class="card-text d-flex justify-content-between">
+                     <h3 id="doug1" class="dougnut item">dougnut item</h3>
+                     <h3 id="amt2" class="dougnut value">$ 5</h3>
+                 </div>
+             </div>
+         </div>
+         <div class="store-item sweet column" data-item="sweet">
+             <div class="card">
+                 <div class="img-container">
+                     <img id="img10" class=" card-img-top sweet store-img"  src="sweet2.jfif"
+                            width="400px" height="265px">
+                     <img id="imt5" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                 </div>
+             </div> 
+             <div class="card-body"> 
+                    <div class="card-text d-flex justify-content-between">
+                        <h3 id="sweet4" class="sweet item">sweet item</h3>
+                        <h3 id="amt3" class="sweet value">$ 5</h3>
+                    </div>
+             </div>    
+         </div>            
+         
+         <div class="store-item cupcake column" data-item="cupcake">
+                <div  class="card">
+                    <div class="img-container">
+                        <img id="img11" class=" card-img-top cupcake store-img" src="cupcake2.jpg"
+                             width="400px" height="265px">
+                        <img id="imt6" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                    </div>
+                </div> 
+                <div class="card-body">
+                    <div  class="card-text d-flex justify-content-between">
+                        <h3 id="ccake1" class="cupcake item">cupcake</h3>
+                        <h3 id="amt4" class="cupcake value">$ 5</h3>
+                    </div>
+                </div>
+         </div>
+         <div class="store-item cake column" data-item="cake">
+                <div  class="card">
+                    <div class="img-container">
+                     <img id="img12" class=" card-img-top cake store-img"  src="cake3.jpg"
+                         width="400px">
+                     <img id="imt7" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                    </div>
+             </div>
+             <div class="card-body"> 
+                 <div class="card-text d-flex justify-content-between">
+                     <h3 id="cake2" class="cake item">cake item</h3>
+                     <h3 id="amt5" class="cake value">$ 5</h3>
+                 </div>
+             </div>
+         </div>
+         <div class="store-item dougnut column" data-item="dougnut">
+                <div  class="card">
+                 <div class="img-container">
+                     <img id="img13" class="card-img-top dougnut store-img" src="dougnut2.jfif"
+                             width="400px" height="265px">
+                     <img id="imt8" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                 </div>
+             </div>
+             <div class="card-body"> 
+                    <div class="card-text d-flex justify-content-between">
+                     <h3 id="doug2" class="dougnut item">dougnut item</h3>
+                     <h3 id="amt6" class="dougnut value">$ 5</h3>
+                    </div>
+                </div>
+         </div>
+         <div class="store-item sweet column" data-item="sweet">
+             <div  class="card">
+                 <div class="img-container">
+                     <img id="img14" class=" card-img-top sweet store-img" src="sweet3.jfif"
+                         width="400px">
+                     <img id="imt9" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                 </div>
+             </div> 
+             <div class="card-body">
+                    <div class="card-text d-flex justify-content-between">
+                        <h3 id="sweet5" class="sweet item">sweet item</h3>
+                        <h3 id="amt7" class="sweet value">$ 5</h3>
+                    </div>
+             </div>
+         </div>
+         <div class="store-item cupcake column" data-item="cupcake"> 
+             <div class="card">
+                    <div class="img-container">
+                      <img id="img15" class=" card-img-top cupcake store-img"  src="cupcake3.jpg"
+                             width="400px">
+                        <img id="imt-10" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                    </div>
+             </div> 
+             <div class="card-body"> 
+                    <div  class="card-text d-flex justify-content-between">
+                         <h3 id="ccake2" class="cupcake item">cupcake item</h3>
+                         <h3 id="amt8" class="cupcake value">$ 5</h3>
+                    </div>
+             </div>
+         </div>
+         <div class="store-item cake column" data-item="cake">
+            <div class="card">
+                <div class="img-container">
+                    <img id="img16" class="card-img-top cake store-img"  src="cake4.jfif"
+                        width="400px" height="267px">
+                    <img id="imt-11" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                </div>
+            </div> 
+            <div class="card-body"> 
+                <div class="card-text d-flex justify-content-between">
+                     <h3 id="cake3" class="cake item">cake item</h3>
+                     <h3 id="amt9" class="cake value">$ 5</h3>
+                </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="cupcake">
-                <img id="img7" class="cupcake" d-flex src="cupcake1.jpg" width="405px">
-                <img id="imt2" src="shopping-cart (1).png" width="20px">
-                <h3 id="sweet2" class="cupcake">cupcake item</h3>
-                <h3 id="amt" class="cupcake">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="cake">
-                <img id="img8" class="cake" onmouseover="increase()" onmouseout="decrease()" src="cake2.jpg"
-                    width="400px">
-                <img id="imt3" src="shopping-cart (1).png" width="20px">
-                <h3 id="sweet3" class="cake">cake item</h3>
-                <h3 id="amt1" class="cake">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="dougnut">
-                <img id="img9" class="dougnut" onmouseover="increase()" onmouseout="decrease()" src="dougnut1.jpg"
-                    width="400px">
-                <img id="imt4" src="shopping-cart (1).png" width="20px">
-                <h3 id="doug1" class="dougnut">dougnut item</h3>
-                <h3 id="amt2" class="dougnut">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="sweet">
-                <img id="img10" class="sweet" onmouseover="increase()" onmouseout="decrease()" src="sweet2.jfif"
-                    width="400px" height="265px">
-                <img id="imt5" src="shopping-cart (1).png" width="20px">
-                <h3 id="sweet4" class="sweet">sweet item</h3>
-                <h3 id="amt3" class="sweet">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="cupcake">
-                <img id="img11" class="cupcake" onmouseover="increase()" onmouseout="decrease()" src="cupcake2.jpg"
-                    width="400px" height="265px">
-                <img id="imt6" src="shopping-cart (1).png" width="20px">
-                <h3 id="ccake1" class="cupcake">cupcake</h3>
-                <h3 id="amt4" class="cupcake">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="cake">
-                <img id="img12" class="cake" onmouseover="increase()" onmouseout="decrease()" src="cake3.jpg"
-                    width="400px">
-                <img id="imt7" src="shopping-cart (1).png" width="20px">
-                <h3 id="cake2" class="cake">cake item</h3>
-                <h3 id="amt5" class="cake">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="dougnut">
-                <img id="img13" class="dougnut" onmouseover="increase()" onmouseout="decrease()" src="dougnut2.jfif"
-                    width="400px" height="265px">
-                <img id="imt8" src="shopping-cart (1).png" width="20px">
-                <h3 id="doug2" class="dougnut">dougnut item</h3>
-                <h3 id="amt6" class="dougnut">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="sweet">
-                <img id="img14" class="sweet" onmouseover="increase()" onmouseout="decrease()" src="sweet3.jfif"
-                    width="400px">
-                <img id="imt9" src="shopping-cart (1).png" width="20px">
-                <h3 id="sweet5" class="sweet">sweet item</h3>
-                <h3 id="amt7" class="sweet">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="cupcake">
-                <img id="img15" class="cupcake" onmouseover="increase()" onmouseout="decrease()" src="cupcake3.jpg"
-                    width="400px">
-                <img id="imt-10" src="shopping-cart (1).png" width="20px">
-                <h3 id="ccake2" class="cupcake">cupcake item</h3>
-                <h3 id="amt8" class="cupcake">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="cake">
-                <img id="img16" class="cake" onmouseover="increase()" onmouseout="decrease()" src="cake4.jfif"
-                    width="400px" height="267px">
-                <img id="imt-11" src="shopping-cart (1).png" width="20px">
-                <h3 id="cake3" class="cake">cake item</h3>
-                <h3 id="amt9" class="cake">$ 5</h3>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="store-item" class="dougnut">
-                <img id="img17" class="dougnut" onmouseover="increase()" onmouseout="decrease()" src="dougnut3.jfif"
-                    width="400px" height="267px">
-                <img id="imt-12" src="shopping-cart (1).png" width="20px">
-                <h3 id="doug3" class="dougnut">dougnut item</h3>
-                <h3 id="amt10" class="dougnut">$ 5</h3>
-            </div>
-        </div>
-        <script src="test.js"></script>
-    </div>
+         </div>
+         <div class="store-item dougnut column" data-item="dougnut">
+             <div class="card">
+                 <div class="img-container">
+                     <img id="img17" class=" card-img-top dougnut store-img"  src="dougnut3.jfif"
+                             width="400px" height="267px">
+                     <img id="imt-12" class="store-img-icon" src="shopping-cart (1).png" width="20px">
+                 </div>
+             </div>
+             <div class="card-body"> 
+                 <div  class="card-text d-flex justify-content-between">
+                         <h3 id="doug3" class="dougnut item">dougnut item</h3>
+                         <h3 id="amt10" class="dougnut value">$ 5</h3>
+                 </div>
+             </div>
+         </div>
+     </div> 
+        <script src="test.js"></script> 
+  </div> 
 </body>
 
 </html>
