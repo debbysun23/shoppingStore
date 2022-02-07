@@ -261,15 +261,18 @@ button:hover{
 .img-container:hover .store-img{
     transform: scale(1.1);
 }
-.row::after{
-    display: flex;
-    clear: both;
-    content: "";
+.row{
+    display: grid;
+    grid-template-columns: 438px 438px 438px;
+    grid-gap:10px;  
 }
 .column{
-    float: left;
+    display: flex;
     flex-basis: 33.33%;
+    flex-wrap: wrap;
+    float: left;
     padding: 20px;
+    background-color: thistle;
 }
 .store-img-icon{
     position: absolute;
@@ -296,6 +299,7 @@ button:hover{
     position: relative;
     background-color: white;
     bottom: 25px;
+    width: 400px;
 }
 .item{
     position: relative;

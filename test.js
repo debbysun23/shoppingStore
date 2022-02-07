@@ -68,7 +68,7 @@ buttons.forEach(function (button) {
         console.log('fee', searchFilter);
        storeItemmms.forEach((item) => {
            if(item.textContent.includes(searchFilter)){
-               item.style.display = 'block'
+               item.style.display =  'block'
            } else{
                item.style.display = 'none'
            }
